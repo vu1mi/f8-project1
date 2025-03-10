@@ -82,31 +82,63 @@
     <title>project 01</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
   </head>
   <body>
+    <header class="fixed-header">
+      <div class="content">
+        <nav class="navbar">
+          <!-- tablet/mobilemobile -->
+          <label for="menu" class="navbar-menu"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              /></svg
+          ></label>
+          <!-- logo -->
+          <img src="./assets/img/Logo.svg" alt="Besnik." class="logo" />
+          <!-- navigation -->
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Resources">Resources</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+          <!-- action -->
+          <div class="action">
+            <a href="" class="action-link">Sign in</a>
+            <a href="" class="btn action-btn">Sign up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <header class="mobile-header">
+      <label for="menu" class="header-overflow"></label>
+      <input type="checkbox" name="" id="menu" class="check-menu" />
+      <div class="sidebar-menu">
+        <img
+          src="./assets/img/Logo.svg"
+          alt="Besnik."
+          class="sidebar-menu-logo"
+        />
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Resources">Resources</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li class="hidden-tablet separation"><a href="">Sign in</a></li>
+          <li class="hidden-tablet"><a href="">Sign up</a></li>
+        </ul>
+      </div>
+      <label for="menu" class="header-overflow"></label>
+    </header>
     <main id="Home">
-      <header class="fixed-header">
-        <div class="content">
-          <nav class="navbar">
-            <!-- logo -->
-            <img src="./assets/img/Logo.svg" alt="Besnik." />
-            <!-- navigation -->
-            <ul>
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Features">Features</a></li>
-              <li><a href="#Resources">Resources</a></li>
-              <li><a href="#Contact">Contact</a></li>
-            </ul>
-            <!-- action -->
-            <div class="action">
-              <a href="" class="action-link">Sign in</a>
-              <a href="" class="btn action-btn">Sign up</a>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <!-- header mobile -->
+
       <!-- hero -->
       <div class="hero-wrap">
         <div class="content">
